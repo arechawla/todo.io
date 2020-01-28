@@ -11,3 +11,106 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+input[type=text], select {
+  width: 500px;
+  height:40px;
+  border-radius:5px;
+  border:2px solid #555;
+  font-family: 'Century Gothic';
+  font-size: 30px;
+  
+}
+
+input[type = 'submit'], input[type = "button"] {
+  border:2px solid white;
+  background-color: transparent;
+  color: white;
+  width: 200px;
+  height:40px;
+  margin-bottom: 10px;
+  
+}
+
+
+
+input[type='checkbox'] {
+  width:20px;
+  height:20px;
+  background:white;
+  border-radius:5px;
+  border:2px solid #555;
+}
+
+input[type='checkbox']:hover {
+  background: #ccc;
+}
+
+input[type='checkbox']:checked {
+  background: #6699ff;
+}
+
+
+.columnSmall {
+  float: left;
+  width: 10%;
+}
+
+.column {
+  float: left;
+  width: 90%;
+}
+
+/* Clear floats after the columns
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+} */
+
+
+.sidenav {
+  height: 100%;
+  width: 220px;
+  background-color: #D6A22B;
+  position: fixed;
+  left: 0;
+}
+
+.sidenav-hidden {
+  height: 100%;
+  width: 200px;
+  background-color: #D7D3CB;
+  position: fixed;
+  left: -100%;
+}
+
+
+.fade-appear {
+  opacity: 0;
+}
+.fade-appear.fade-appear-active {
+opacity: 1;
+transition: opacity 300ms linear;
+}
+
+.fade-enter {
+  opacity: 0;
+}
+.fade-enter.fade-enter-active {
+    opacity: 1;
+    transition: opacity 300ms linear;
+}
+
+.fade-exit {
+  opacity: 1;
+}
+.fade-exit.fade-exit-active {
+  opacity: 0;
+  transition: opacity 5000ms linear;
+}
+.fade-exit-done {
+opacity: 0;
+}
+
